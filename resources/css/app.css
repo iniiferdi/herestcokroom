@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Custom animation for rotating the arrow */
+.rotate-0 {
+    transform: rotate(0deg);
+}
+.rotate-180 {
+    transform: rotate(180deg);
+}
+.transition-transform {
+    transition: transform 0.3s;
+}
+/* For sliding effect */
+.max-h-0 {
+    max-height: 0;
+}
+.max-h-96 {
+    max-height: 24rem; /* Adjust based on content height */
+}
+.transition-max-height {
+    transition: max-height 0.3s ease-in-out;
+}
+
+.border-checked{
+    border-color: #242424;
+}
+
+#imageSlider {
+    width: 300%;
+}
+
+#imageSlider img {
+    width: 33.3333%;
+}
+
+#imageSlider {
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.indicator.active {
+    background-color: #242424;
+    padding: 0px 8px ;
+    transition: background-color 0.3s ease;
+}
+
+.box-shadowrr{
+    box-shadow:  -13px -34px 16px 0 rgba(255, 255, 255, 0.9);
+}
+
+@keyframes slideIn {
+    from {
+        right: -400px;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        right: 0;
+    }
+    to {
+        right: -400px;
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.3s forwards;
+}
+
+.slide-out {
+    animation: slideOut 0.3s forwards;
+}
+
+#bar.active{
+    background-color: #ED7755;
+    /* height: 40px; */
+    
+}
+
+
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+#crud-modal_category {
+   
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+#crud-modal_size {
+   
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+#crud-modal_color {
+   
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+#crud-modal_product {
+   
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+#crud-modal_address {
+   
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+#crud-modal_updateproduct {
+   
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+#crud-modal_stock {
+   
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    max-height: 80vh; /* Sesuaikan tinggi maksimal modal */
+    overflow-y: auto; /* Tambahkan scroll vertical */
+}
+
+.hidden {
+    display: none;
+}
+
+.size-option {
+    cursor: pointer;
+}
+.size-option.border-950 {
+    border-color: #950;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.transition-transform {
+    transition: transform 0.3s;
+}
+
+.rotate-0 {
+    transform: rotate(0deg);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.max-h-96 {
+    max-height: 24rem;
+}
+
+.max-h-0 {
+    max-height: 0;
+}
+
+.transition-max-height {
+    transition: max-height 0.3s;
+}
+
+.scale-95 {
+    transform: scale(0.95);
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.transition-all {
+    transition: all 0.3s;
+}
+
+
+.active{
+    background-color: #242424;
+    color : #ffffff;
+}
+.inactive{
+    background-color: #ffffff;
+    color : #242424;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
