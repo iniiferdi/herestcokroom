@@ -1,66 +1,161 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Herestockroom
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Herestockroom](https://via.placeholder.com/1000x300.png?text=Herestockroom)  
+**A Modern E-commerce Platform for Shoe Retailers.**
 
-## About Laravel
+Herestockroom is a web-based e-commerce platform specifically designed for shoe retailers. Built with **Laravel** and **TailwindCSS**, the application provides a seamless shopping experience with features like product browsing, checkout, and secure payment integration.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🌟 Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Dynamic product catalog** with search and filter functionality.
+- **Secure checkout process** with integrated payment gateway.
+- **Responsive design** powered by TailwindCSS for optimal user experience across devices.
+- **User authentication** with role-based access (Admin, Customer).
+- **Inventory management** for admins to manage stock levels.
+- **Order tracking** for customers to monitor their purchases.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🚀 Live Demo
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Check out the deployed application here:  
+🔗 [Herestockroom Live](https://your-deployment-link.com/)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 📂 Folder Structure
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+```plaintext
+herestockroom/
+├── app/                    # Core application files
+├── bootstrap/              # Framework bootstrap files
+├── config/                 # Configuration files
+├── database/               # Migrations and seeders
+├── public/                 # Public assets (CSS, JS, Images)
+├── resources/              # Views and frontend assets
+│   ├── css/                # TailwindCSS stylesheets
+│   ├── js/                 # JavaScript files
+│   └── views/              # Blade templates
+├── routes/                 # Application routes
+├── storage/                # Storage for compiled files and logs
+├── tests/                  # Automated tests
+├── .env                    # Environment configuration
+├── artisan                 # Artisan CLI tool
+├── composer.json           # Composer dependencies
+├── package.json            # NPM dependencies
+├── webpack.mix.js          # Laravel Mix configuration
+```
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 💻 Installation and Usage
 
-## Contributing
+Follow the steps below to set up and run Herestockroom locally:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/herestockroom.git
+   ```
 
-## Code of Conduct
+2. Navigate to the project directory:
+   ```bash
+   cd herestockroom
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+3. Install PHP dependencies:
+   ```bash
+   composer install
+   ```
 
-## Security Vulnerabilities
+4. Install JavaScript dependencies:
+   ```bash
+   npm install
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+5. Compile assets using Laravel Mix:
+   ```bash
+   npm run dev
+   ```
 
-## License
+6. Set up your environment variables:
+   ```bash
+   cp .env.example .env
+   ```
+   Update the `.env` file with your database and other configurations.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+7. Run database migrations:
+   ```bash
+   php artisan migrate
+   ```
+
+8. Start the local development server:
+   ```bash
+   php artisan serve
+   ```
+
+9. Open the application in your browser:
+   ```
+   http://localhost:8000/
+   ```
+
+---
+
+## 📜 Documentation
+
+Refer to the in-depth documentation to understand the project structure and functionality:
+- **Blade templates**: Dynamic and reusable components for building UI.
+- **Inventory management**: Admin panel for stock and order management.
+- **Payment gateway integration**: Secure and seamless payment process.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! To get started:
+
+1. Fork the repository.
+2. Create a new feature branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add a new feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Submit a pull request.
+
+---
+
+## 📃 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## ✨ Acknowledgments
+
+- Thanks to **Laravel** for providing a robust backend framework.
+- Special appreciation to the open-source community for invaluable resources and support.
+
+---
+
+## 🛠️ Built With
+
+- [Laravel](https://laravel.com/) - The PHP Framework for Web Artisans.
+- [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework.
+
+---
+
+## 👨‍💻 Author
+
+Developed by: **Ferdiyanto**  
+
+---
+
+![GitHub Repo stars](https://img.shields.io/github/stars/your-username/herestockroom?style=social) ![GitHub last commit](https://img.shields.io/github/last-commit/your-username/herestockroom?style=flat-square)
