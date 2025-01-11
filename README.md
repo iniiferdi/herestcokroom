@@ -3,14 +3,14 @@
 ![Herestockroom](https://via.placeholder.com/1000x300.png?text=Herestockroom)  
 **A Modern E-commerce Platform for Shoe Retailers.**
 
-Herestockroom is a web-based e-commerce platform specifically designed for shoe retailers. Built with **Laravel** and **TailwindCSS**, the application provides a seamless shopping experience with features like product browsing, checkout, and secure payment integration.
+Herestockroom is a web-based e-commerce platform specifically designed for shoe retailers. Built with **Laravel**, **TailwindCSS**, and integrated with **Midtrans** for secure payment processing, the application provides a seamless shopping experience with features like product browsing, checkout, and secure payment integration.
 
 ---
 
 ## 🌟 Features
 
 - **Dynamic product catalog** with search and filter functionality.
-- **Secure checkout process** with integrated payment gateway.
+- **Secure checkout process** powered by **Midtrans Payment Gateway**.
 - **Responsive design** powered by TailwindCSS for optimal user experience across devices.
 - **User authentication** with role-based access (Admin, Customer).
 - **Inventory management** for admins to manage stock levels.
@@ -83,7 +83,7 @@ Follow the steps below to set up and run Herestockroom locally:
    ```bash
    cp .env.example .env
    ```
-   Update the `.env` file with your database and other configurations.
+   Update the `.env` file with your database and Midtrans configurations.
 
 7. Run database migrations:
    ```bash
@@ -107,7 +107,7 @@ Follow the steps below to set up and run Herestockroom locally:
 Refer to the in-depth documentation to understand the project structure and functionality:
 - **Blade templates**: Dynamic and reusable components for building UI.
 - **Inventory management**: Admin panel for stock and order management.
-- **Payment gateway integration**: Secure and seamless payment process.
+- **Midtrans Integration**: Secure and seamless payment process.
 
 ---
 
@@ -141,7 +141,8 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ## ✨ Acknowledgments
 
 - Thanks to **Laravel** for providing a robust backend framework.
-- Special appreciation to the open-source community for invaluable resources and support.
+- Special appreciation to **Midtrans** for secure payment integration.
+- Thanks to the open-source community for invaluable resources and support.
 
 ---
 
@@ -149,6 +150,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 - [Laravel](https://laravel.com/) - The PHP Framework for Web Artisans.
 - [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework.
+- [Midtrans](https://midtrans.com/) - Payment gateway for secure transactions.
 
 ---
 
